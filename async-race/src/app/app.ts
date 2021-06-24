@@ -1,0 +1,26 @@
+import Garage from '../components/garage';
+import CreateButtonForControl from '../components/createButtonForControl';
+import Listener from '../components/listener';
+
+const GARAGE = new Garage();
+const CREATEBUTTONFORCONTROL = new CreateButtonForControl();
+const LISTENER = new Listener();
+GARAGE.togglerGarageAndWinner();
+CREATEBUTTONFORCONTROL.buildButtonForControl();
+GARAGE.buildMainPage();
+GARAGE.renderGarage();
+GARAGE.renderChangePageGarage();
+LISTENER.selectIdCar();
+LISTENER.createCar();
+LISTENER.deleteCar();
+LISTENER.startCar();
+LISTENER.generateCar();
+LISTENER.clickWinners();
+LISTENER.changePageClickGarage();
+LISTENER.changePageClickWinner();
+LISTENER.stopCar();
+LISTENER.resetButton();
+LISTENER.clickToGarage();
+LISTENER.sortByWinner();
+LISTENER.sortByTime();
+LISTENER.raceButton();
