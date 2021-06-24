@@ -1,0 +1,144 @@
+.button {
+  padding: 26px 54px 26px 30px;
+  @include font($size: 1.8rem, $height: 2.2 rem, $weight: 600);
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: flex;
+  &_colored {
+    @extend %transition;
+    background: $color-link-header;
+    color: $color-text-alternative;
+    outline: none;
+    border: 0;
+
+    &:hover {
+      @extend %transition;
+      background: $color-hover-btn;
+      outline: none;
+      border: 0;
+    }
+    &:active {
+      background: $color-hover-btn;
+      outline: none;
+      border: 0;
+    }
+  }
+  @include media-mobile {
+    padding: 12px 57px 12px 65px;
+  }
+}
+.button__arrow {
+  margin-left: 10px;
+  background-image: url("../../assets/icons/firstbtnArrow.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 22px;
+  display: inline-flex;
+}
+
+
+.buttonArrow {
+  background-color: $color-text-alternative;
+  border: none;
+  cursor: pointer;
+  @extend %transition;
+}
+
+
+.link-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 54px;
+  text-decoration: none;
+  color: $color-link-header;
+  @include font($size: 1.8rem, $height: 2.2 rem, $weight: 600);
+  height: 22px;
+  padding-bottom: 97px;
+  @include media-tablet {
+    padding: 22px 0;
+  }
+}
+
+.button_link {
+  padding: 26px 28px 26px 30px;
+  display: flex;
+  align-items: center;
+  @extend  %transition;
+  color: $color-link-header;
+  background: none;
+  border: none;
+}
+
+.button_link:hover {
+  background-color: $color-link-header;
+  color: $color-text-alternative;
+  outline: none;
+  border: none;
+  .ico__arrow {
+    background-image: url("../../assets/icons/arrowRight.svg");
+  }
+}
+
+.ico__arrow {
+  margin-left: 10px;
+  background-image: url("../../assets/icons/arrowOrange.svg");
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 25px;
+  display: inline-flex;
+}
+
+.button__chooseYourFavourite {
+  @include font($size: 1.8rem, $height: 2.2 rem, $weight: 600);
+  background-color: $color-text-alternative;
+  border: 1px solid $color-background;
+  padding: 26px 45px 26px 36px;
+  @extend %transition;
+  @include media-mobile {
+    display: none;
+  }
+}
+
+
+.button__chooseYourFavourite:hover {
+  color: $color-text-alternative;
+ background-color: $color-background;
+  .ico__arrowBlack {
+    background-image: url("../../assets/icons/arrowRight.svg");
+  }
+}
+.ico__arrowBlack {
+  margin-left: 10px;
+
+  background-image: url("../../assets/icons/arrowBlack.svg");
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 22px;
+  display: inline-block;
+}
+
+.ico__arrowBlack:hover {
+  background-image: url("../../assets/icons/arrowRight.svg");
+}
+
+
+.reviews__btn {
+  padding: 26px 32px;
+ background: none;
+  width: 359px;
+  color: $color-text-alternative;
+  border: 1px solid $color-text-alternative ;
+  border-radius: 5px;
+  @extend %transition;
+  display: flex;
+  justify-content: center;
+  @include media-mobile {
+    padding: 9px 9px;
+    width: auto;
+}
+}
+
+.reviews__btn:hover {
+background-color: $color-topic-btn;
+}
