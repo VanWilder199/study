@@ -1,0 +1,6 @@
+.map__wrapper {
+  max-width: 1400px;
+  @include media-tablet {
+    padding: 0;
+  }
+}

@@ -1,0 +1,33 @@
+.contactUs-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  @include media-notebook {
+
+  }
+}
+
+.contactUs__twoLayouts {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+  @include media-notebook {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+.contactUs-getInTouch {
+  @include media-notebook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 62px;
+  };
+  @include media-tablet {
+    padding: 50px 20px 0 20px;
+  };
+  @include media-mobile {
+    padding: 30px 10px 0 10px;
+  }
+}

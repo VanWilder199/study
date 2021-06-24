@@ -1,0 +1,196 @@
+.ico {
+
+}
+.footer__logo {
+  display: block;
+  background-image: url("../../assets/icons/footer/logo.svg");
+  width: 96px;
+  height: 50px;
+}
+
+.footer__digital {
+  display: block;
+  background-image: url("../../assets/icons/footer/digital.svg");
+  width: 50px;
+  height: 50px;
+
+}
+
+.footer__rsSchoolLogo {
+  display: block;
+  background-image: url("../../assets/icons/footer/rsSchoolLogo.svg");
+  width: 138px;
+  height: 52px;
+}
+
+.footer-ico {
+  list-style-type: none;
+
+}
+
+.footer-ico__padding {
+  padding: 0 67px;
+  @include media-notebook {
+    padding: 0 30px;
+  };
+  @include media-mobile {
+    padding: 30px 0px;
+  }
+}
+
+
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  @include media-tablet {
+    justify-content: space-around;
+  };
+  @include media-mobile {
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  @include media-tablet {
+    padding: 50px 0;
+  };
+  @include media-mobile {
+    padding: 30px 0;
+  }
+}
+
+
+.footer-nav__text {
+  @include font($size: 1.8rem, $weight: 600, $height: 2.2rem);
+  text-transform: uppercase;
+  color: $color-text-alternative;
+  padding: 0 20px;
+  @include media-notebook {
+    padding: 0 15px;
+  };
+  @include media-mobile {
+    font-size: 1.5rem;
+  }
+}
+
+.nav_active {
+  @extend %transition;
+
+}
+
+.nav_active:hover {
+  color: $color-topic-btn;
+}
+
+
+.footer-btn {
+  margin: -16px 0;
+  @include media-tablet {
+    text-align: -webkit-center;
+  }
+}
+
+.footer__line {
+  display: block;
+  width: 1400px;
+  margin: 0 auto;
+  border: 1px solid #FFFFFF;
+  position: absolute;
+  @include media-notebook {
+    left: 0;
+  }
+
+}
+.footer-row-text {
+  display: flex;
+  justify-content: space-between;
+  @include media-tablet {
+    padding-top: 30px;
+  };
+  @include media-mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer-row__text {
+  @include font($size: 1.8rem, $height: 2.2rem);
+  color: $color-text-alternative;
+  @include media-mobile {
+    padding: 30px;
+  }
+}
+
+.footer-row__padding {
+  padding: 0 50px;
+  @include media-tablet {
+    padding: 0;
+  }
+}
+
+.footer-link__padding {
+  padding: 0 40px;
+}
+
+.footer__tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.footer__tooltipText {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.footer__tooltip:hover .footer__tooltipText {
+  visibility: visible;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 220px;
+  align-self: center;
+}
+
+.footer-nav_text {
+  @include media-mobile {
+    padding: 0;
+  }
+}
+
+.footer_lineActive {
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.footer_lineMobile {
+  display: none;
+  @include media-mobile {
+    display: block;
+    position: absolute;
+    left: -14px;
+    top: 102px;
+  }
+}

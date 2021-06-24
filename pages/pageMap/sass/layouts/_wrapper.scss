@@ -1,0 +1,11 @@
+.wrapper {
+  max-width: $content-width;
+  margin: auto;
+  overflow: hidden;
+  @include media-notebook {
+    padding: 0 100px;
+  };
+  @include media-tablet {
+    padding: 0 0 0 20px;
+  }
+}

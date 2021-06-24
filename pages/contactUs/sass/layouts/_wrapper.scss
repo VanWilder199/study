@@ -1,0 +1,12 @@
+.wrapper {
+  max-width: $content-width;
+  margin: auto;
+
+  @include media-notebook {
+    padding: 0;
+  };
+  @include media-tablet {
+    padding: 0;
+  };
+
+}

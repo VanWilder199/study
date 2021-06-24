@@ -1,0 +1,59 @@
+.button {
+  padding: 26px 54px 26px 30px;
+  @include font($size: 1.8rem, $height: 2.2 rem, $weight: 600);
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  &_colored {
+    @extend %transition;
+    background: $color-link-header;
+    color: $color-text-alternative;
+    outline: none;
+    border: 0;
+
+    &:hover {
+      @extend %transition;
+      background: $color-hover-btn;
+      outline: none;
+      border: 0;
+    }
+    &:active {
+      background: $color-hover-btn;
+      outline: none;
+      border: 0;
+    }
+  }
+  @include media-mobile {
+    padding: 12px 57px 12px 65px;
+  }
+}
+
+
+.reviews__btn {
+  padding: 26px 32px;
+  background: none;
+  width: 359px;
+  color: $color-text-alternative;
+  border: 1px solid $color-text-alternative ;
+  border-radius: 5px;
+  @extend %transition;
+  display: flex;
+  justify-content: center;
+  @include media-mobile {
+    padding: 9px 9px;
+    width: auto;
+  }
+}
+
+.button__arrow {
+  margin-left: 10px;
+  background-image: url("../../assets/icons/firstbtnArrow.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 22px;
+  display: inline-flex;
+}
+
+.reviews__btn:hover {
+  background-color: $color-topic-btn;
+}

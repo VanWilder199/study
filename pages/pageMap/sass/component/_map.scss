@@ -1,0 +1,374 @@
+h1 {
+  display: none;
+}
+.map-text {
+  padding-top: 40px;
+  width: 601px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  @include media-notebook {
+    padding-top: 30px;
+  };
+  @include media-mobile {
+    text-transform: none;
+    width: auto;
+    padding: 20px 10px 0 10px;
+  }
+}
+.map-ico {
+  padding: 70px 0 150px;
+  position: relative;
+  @include media-notebook {
+    padding: 30px 0 100px;
+  };
+  @include media-tablet {
+    padding: 50px 0 0 0;
+  };
+  @include media-mobile {
+    position: relative;
+    margin-bottom: 264px;
+    margin-top: 30px;
+    padding: 0;
+  }
+}
+
+.map__img {
+  @include media-notebook {
+    width: 1200px;
+  };
+  @include media-tablet {
+    width: 100%;
+    height: 415px;
+  }
+  @include media-mobile {
+    position: absolute;
+    left: -18px;
+    top: 0;
+    width: 361px;
+    height: 233px;
+  }
+}
+
+.map__eagles {
+  position: absolute;
+  background-image: url("../../assets/icons/map/locationOrange.svg");
+  //background-image: url("../../assets/icons/map/locationWhite.svg");
+  width: 160px;
+  height: 204px;
+  left: 135px;
+  top: 439px;
+  display: flex;
+  justify-content: center;
+  @include media-notebook {
+    left: 104px;
+    top: 327px;
+  };
+  @include media-tablet {
+    left: 73px;
+    top: 244px;
+    background-size: cover;
+    width: 42px;
+    height: 60px;
+  };
+  @include media-mobile {
+    left: 15px;
+    top: 93px;
+    width: 35px;
+    height: 50px;
+  }
+}
+.eagle__svg {
+  @include media-tablet {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.map__eagles:hover {
+  background-image: url("../../assets/icons/map/locationWhite.svg");
+  background-position: center;
+  .eagle {
+    padding-top: 50px;
+    padding-left: 19px;
+  }
+  @include media-tablet {
+    transform: scale(1.10);
+    padding: 0;
+    .eagle {
+      padding-right: 22px;
+      padding-top: 0;
+    }
+  }
+
+}
+
+.map__crocodil {
+  position: absolute;
+  background-image: url("../../assets/images/map/crocodile.svg");
+  width: 141px;
+  height: 182px;
+  display: block;
+  left: 269px;
+  top: 464px;
+  @include media-notebook {
+    left: 218px;
+    top: 337px;
+  };
+  @include media-tablet {
+    left: 131px;
+    top: 246px;
+    background-size: cover;
+    width: 42px;
+    height: 60px;
+  };
+  @include media-mobile {
+    left: 54px;
+    top: 102px;
+    width: 35px;
+    height: 50px;
+  }
+}
+
+.map__lion {
+  position: absolute;
+  background-image: url("../../assets/images/map/lion.svg");
+  width: 141px;
+  height: 162px;
+  display: block;
+  left: 556px;
+  top: 511px;
+  @include media-notebook {
+    left: 473px;
+    top: 376px;
+  };
+  @include media-tablet {
+    left: 261px;
+    top: 258px;
+    background-size: cover;
+    width: 42px;
+    height: 60px;
+  };
+  @include media-mobile {
+    left: 131px;
+    top: 103px;
+    background-size: cover;
+    width: 35px;
+    height: 50px;
+  }
+}
+
+.map__gorilla {
+  position: absolute;
+  background-image: url("../../assets/icons/map/locationOrange.svg");
+  width: 141px;
+  height: 182px;
+  left: 666px;
+  top: 527px;
+  display: flex;
+  justify-content: center;
+  @include media-notebook {
+    left: 56.58%;
+    top: 47.25%;
+  };
+  @include media-tablet {
+    left: 311px;
+    top: 271px;
+    background-size: cover;
+    width: 42px;
+    height: 60px;
+  };
+  @include media-mobile {
+    left: 154px;
+    top: 128px;
+    width: 35px;
+    height: 50px;
+  }
+}
+
+.map__gorilla:hover {
+  background-image: url("../../assets/icons/map/locationWhite.svg");
+  background-position: center;
+    @include media-tablet {
+      background-position: inherit;
+    }
+  }
+
+.map__lemur {
+  position: absolute;
+  background-image: url("../../assets/icons/map/locationOrange.svg");
+  background-repeat: no-repeat;
+  width: 141px;
+  height: 182px;
+  left: 773px;
+  top: 647px;
+  display: flex;
+  justify-content: center;
+  @include media-notebook {
+    left: 65.17%;
+    top: 55.07%;
+  }
+  @include media-tablet {
+    left: 360px;
+    top: 330px;
+    background-size: cover;
+    width: 42px;
+    height: 60px;
+  };
+  @include media-mobile {
+    left: 179px;
+    top: 146px;
+    width: 35px;
+    height: 50px;
+  }
+}
+
+.map__lemur:hover {
+  background-image: url("../../assets/icons/map/locationWhite.svg");
+  background-position: center;
+  @include media-tablet {
+    background-position: inherit;
+  }
+}
+
+.lemur, .panda, .gorilla {
+  padding-top: 40px;
+  @include media-tablet {
+    align-self: center;
+    padding-left: 5px;
+    padding-bottom: 6px;
+    padding-top: 0;
+  }
+}
+
+
+
+.eagle {
+  padding-top: 50px;
+  padding-right: 21px;
+  @include media-tablet {
+    padding: 0;
+    margin-left: 3px;
+    align-self: center;
+  }
+}
+
+.map__panda {
+  position: absolute;
+  background-image: url("../../assets/icons/map/locationOrange.svg");
+  width: 141px;
+  height: 182px;
+  left: 930px;
+  top: 407px;
+  display: flex;
+  justify-content: center;
+  @include  media-notebook {
+    left: 78.17%;
+    top: 33.41%;
+  };
+  @include media-tablet {
+    left: 460px;
+    top: 205px;
+    background-size: cover;
+    width: 42px;
+    height: 60px;
+  };
+  @include media-mobile {
+    left: 225px;
+    top: 87px;
+    width: 35px;
+    height: 50px;
+  }
+}
+.map__panda:hover {
+  background-image: url("../../assets/icons/map/locationWhite.svg");
+  background-position: center;
+  @include media-tablet {
+    background-position: inherit;
+  }
+}
+
+.map__tiger {
+  position: absolute;
+  background-image: url("../../assets/images/map/tiger.svg");
+  width: 141px;
+  height: 182px;
+  left: 991px;
+  top: 559px;
+  display: flex;
+  justify-content: center;
+  @include media-notebook {
+    left: 83.53%;
+    top: 47.86%;
+  };
+  @include media-tablet {
+    left: 460px;
+    top: 299px;
+    background-size: cover;
+    width: 42px;
+    height: 60px;
+  };
+  @include media-mobile {
+    left: 240px;
+    top: 130px;
+    width: 35px;
+    height: 50px;
+  }
+}
+
+
+.map__coala {
+  position: absolute;
+  background-image: url("../../assets/images/map/coala.svg");
+  width: 141px;
+  height: 182px;
+  left: 1111px;
+  top: 675px;
+  display: flex;
+  justify-content: center;
+  @include media-notebook {
+    left: 94.75%;
+    top: 57.55%;
+  };
+  @include media-tablet {
+    left: 517px;
+    top: 344px;
+    background-size: cover;
+    width: 42px;
+    height: 60px;
+  };
+  @include media-mobile {
+    left: 268px;
+    top: 151px;
+    width: 35px;
+    height: 50px;
+  }
+}
+
+
+.map__tooltip {
+
+}
+
+.map__tooltipText {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;;
+  @include media-mobile {
+    margin-left: -40px;
+    font-size: 1.2rem;
+  }
+}
+
+.map__tooltip:hover .map__tooltipText {
+  visibility: visible;
+}

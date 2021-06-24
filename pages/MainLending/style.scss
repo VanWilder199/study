@@ -1,0 +1,43 @@
+
+@import "../../sass/base/normalize";
+@include normalize();
+
+
+//Abstract
+@import "../../sass/abstract/constants";
+@import "../../sass/abstract/mixins";
+@import "../../sass/abstract/placeholders";
+
+//Base
+@import "../../sass/base/base";
+@import "../../sass/base/buttons";
+@import "../../sass/base/logo";
+@import "../../sass/base/icons";
+@import "../../sass/base/tags";
+@import "../../sass/base/hamburger";
+@import "../../sass/base/modal";
+@import "../../sass/base/input";
+@import "../../sass/base/reviews-cards";
+@import "../../sass/base/favourite-cards";
+
+//Layouts
+@import "../../sass/layouts/wrapper";
+@import "../../sass/layouts/header";
+@import "../../sass/layouts/promo";
+@import "../../sass/layouts/howItWorks";
+@import "../../sass/layouts/favourite";
+@import "../../sass/layouts/footer-layouts";
+
+
+
+// Components
+@import "../../sass/component/navigation";
+@import "../../sass/component/social-link";
+@import "../../sass/component/promo";
+@import "../../sass/component/howItWorks";
+@import "../../sass/component/quickDonate";
+@import "../../sass/component/petsInZoo";
+@import "../../sass/component/payAndFeed";
+@import "../../sass/component/reviews";
+@import "../../sass/component/favourite";
+@import "../../sass/component/footer";

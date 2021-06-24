@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin: 0;
+  @include media-notebook {
+    padding: 0;
+  };
+  @include media-tablet {
+    display: none;
+  };
+}
+.link {
+  opacity: 80%;
+}
+
+.link:hover {
+  @extend %hoverBig
+}
+
+.link-social {
+  list-style: none;
+  cursor: pointer;
+}
+.link-social_padding {
+  padding: 0;
+}
